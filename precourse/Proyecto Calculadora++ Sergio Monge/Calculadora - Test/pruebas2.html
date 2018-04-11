@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator++</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>
+* {
+ box-sizing: border-box;
+}
+body {
+    font-family:arial; 
+    margin: 70px 250px 0 250px;
+}
+.all {
+    max-width:500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.head {
+    width: 100%;
+    height:130px;
+    padding: 1px 0 0 9px;
+    background-color: black;
+    font-size: 18px;
+    color: white;
+    border: 1px solid red;
+}
+#screenOper {
+   
+   height:50px;
+   background-color: #DFF9BF;
+   margin: 0 15px 15px 7px;
+}
+.mainKeys {
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    background-color: #888991;
+    padding: 5px;
+    justify-content: space-around;
+}
+input[type=button] {
+   height:50px;
+   width: 22%;
+   margin: 10px 0 10px 0;
+   font-size: 20px;
+}
+.buttonOper {
+   background-color: #BFC2C6;
+   color: white;
+}
+#zero {
+   display:flex;
+   width: 47%;
+   padding: 0 0 0 100px;
+   text-align: right; 
+}
+</style>
+<script>
+
+showNums() {
+
+   
+    
+}
+
+
+
+</script>
+<body>
+ 
+<div class="all">
+ <div class="head">
+ 
+   <p class="nameCal"><b>Calculator++</b></p>
+  <div id="screenOper">    
+  </div>
+ </div>
+  
+   <div class="mainKeys" style="background-color: #888991">
+    
+     <input type="Button" id="1/x" value="1/x" class="buttonOper">
+     <input type="Button" id="x2" value="x2" class="buttonOper">
+     <input type="Button" id="<=" value="<=" class="buttonOper">
+     <input type="Button" id="Multiply" value="*" class="buttonOper">
+     <input type="Button" id="7" value="7" class="button">
+     <input type="Button" id="8" value="8" class="button">
+     <input type="Button" id="9" value="9" class="button">
+     <input type="Button" id="Division" value="/" class="buttonOper">
+     <input type="Button" id="4" value="4" class="button">
+     <input type="Button" id="5" value="5" class="button">
+     <input type="Button" id="6" value="6" class="button">
+     <input type="Button" id="Sum" value="+" class="buttonOper">
+     <input type="Button" id="1" value="1" class="button">
+     <input type="Button" id="2" value="2" class="button">
+     <input type="Button" id="3" value="3" class="button">
+     <input type="Button" id="Subs" value="-" class="buttonOper">
+     <input type="Button" id="zero" value="0" class="button">
+     <input type="Button" id="C" value="C" class="buttonOper" style="color: red">
+     <input type="Button" id="result" value="=" class="buttonOper">
+   </div>
+
+
+ <script type="text/javascript" src="main.js"></script>
+</div>
+</body>
+</html>

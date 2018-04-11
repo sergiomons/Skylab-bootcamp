@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+ box-sizing: border-box;
+}
+body {
+    font-family:arial; 
+    margin: 0 25px 25px 25px;
+   
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.navbar {
+   float:left;
+   width:100%;
+   padding:3px 5px 0 5px;
+   height: 35px;
+   background-color: #3789D5;
+   margin-bottom:10px;
+}
+
+.nav-left {
+     float:left;
+     width:12%;
+     color:grey;
+     font-size:20px;
+}
+.nav-left a {
+     color:#A3A8AE;
+     padding: 6px;
+     padding-left:14px;
+}
+.nav-center {
+     float:left;
+     width:68%;
+     text-align: center;
+}
+.nav-center a {
+     color:white;
+     font-size:15px;
+     margin-right: 8px;
+}
+.nav-center a:hover {
+     background-color: #2D46DB;
+     text-decoration:underline;
+}
+.nav-right {
+     float:left; 
+     width:20%;
+     height: 28px;
+     
+}
+.nav-right a {
+     color:grey;
+     margin:15px;
+}
+a {
+     text-decoration: none;
+}
+input[type=text] {
+    float:left;
+    height:27px;
+    width: 215px;
+    font-size:12px;
+    background-image: url("images/lupa.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
+}
+.buttonsearch {
+    margin: 1px;
+    width: 60px;
+    height: 25px;
+    background-color: #C4C5C6;
+    border:none;
+    background-image: url('images/lupa.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    cursor:pointer;
+}
+main {
+    max-width:1700px;
+    display: inline-block;
+    margin-left:15px; 
+    margin-right: 15px;
+}
+.after-nav {
+     display:inline-block;
+     width:99%;
+     background-color:#729ABE;
+     color: white;
+     text-align: center;
+     font-size:14px;
+     margin-bottom: 7px;
+     height: 25px;
+     margin:0 5px 7px 7px;
+     
+}
+.p-square1 {
+    line-height: 0px;  
+}
+
+.images {
+   display:flex;
+   flex-wrap:wrap; 
+}
+.imag-row1 {
+    flex:25%;
+    max-width: 25%;
+    padding: 0 5px 20px 5px;
+    vertical-align: middle;
+}
+.img-row1 img, .name-game {
+     margin-right:5px;   
+}
+.name-game {
+   text-align:center;
+     font-size: 14px;
+}
+.bottom {
+      margin-top: 10px;
+}
+
+.col-left{
+   float:left;
+   width: 65%;
+   padding: 0 10px 0 4px;
+}
+.after-images, .after-imagesright {
+   display:inline-block;
+     width:100%;
+     background-color:#729ABE;
+     color: white;
+     text-align: center;
+     font-size:14px;
+     margin-bottom:3px;
+     height: 25px;
+}
+.p-square2, .p-square3 {
+line-height: 0px; 
+}
+.games-left, .games-right {
+   display: flex; 
+   flex-direction: column;
+   width: 100%;
+}
+.images-left1, .images-left2, .images-left3, .images-left4  {
+   float:left;
+   flex: 25%;
+   width:15%;
+}
+.block-left1, .block-left2, .block-left3, .block-left4, .block-right1, .block-right2, .block-right3, .block-right4   {
+  margin-bottom: 5px;
+}
+.block-right1, .block-right2, .block-right3, .block-right4   {
+  padding: 0 0 5px 10px;
+}
+.title-game {
+   float:left;
+   color:#729ABE;
+   font-size: 15px;
+   margin: 0 0 0px 58px;
+}
+.consoles {
+   float:left;
+   margin: 1px 0 0px 58px;
+   font-size: 13px;
+}
+.col-right {
+    float:left;
+    width: 35%;
+    padding: 0 0 0 10px;
+}
+.images-right1, .images-right2, .images-right3, .images-right4  {
+   float:left;
+   padding: 0 0 0 0px;
+   width:20%;
+}
+.title-gameright {
+   float:left;
+   color:#729ABE;
+   font-size: 13px;
+   margin: 0 0 0px 8px;
+}
+.consolesright {
+   float:left;
+   margin: 0 0 0px 8px;
+   font-size: 12px;
+}
+@media screen and (max-width:480px) {
+          .navbar a{
+          float:none;
+          margin:5px
+  }  
+@media screen and (max-width:480px) {
+          .navbar {
+          float:none;
+          margin:20px 0 0 120px;
+          width: 200px;
+  }  
+</style>
+</head>
+<body>
+<div class="clearfix">
+ <header>
+   <div class="navbar">
+     <div class="nav-left">
+       <a href="#eliteguias"><b>Elite<span style="color: #F7790E">guias</span></b></a>
+     </div>
+      <div class="nav-center">
+       <a href="#guias"><b>GUÍAS</b></a>
+       <a href="#trucos"><b>TRUCOS</b></a>
+       <a href="#logros"><b>LOGROS</b></a>
+       <a href="#trofeos"><b>TROFEOS</b></a>
+       <a href="#foro" style="color:#C4C5C6;font-size:13px"><b>FORO</b></a>
+      </div>
+      <div class="nav-right">
+       <input type="text" placeholder="Búsqueda personalizada">
+       <a href="https://www.google.es/" target="_blank">
+        <button type="bottom" class="buttonsearch">Buscar</button>
+       </a>
+      </div>
+   </div>
+  
+</header> 
+<main>
+  <div class="after-nav">
+   <p class="p-square1"><b>Guías destacadas</b></p>
+  </div>
+  
+ <div class="images">
+  
+  <div class="imag-row1">
+   <a target="_blank" href="images/darksouls3.jpg">
+    <img class="imag-left" src="images/darksouls3.jpg" alt="darksouls3.jpg" style="width:100%;height:150px">
+   </a>
+   <div class="name-game">Dark Souls III</div>
+  </div>
+  
+  <div class="imag-row1">
+   <a target="_blank" href="images/xenoblades.jpg">
+    <img src="images/xenoblades.jpg" alt="xenoblades.jpg" style="width:100%;height:150px">
+   </a>
+  <div class="name-game">Xenoblades Chronicles X</div>
+  </div>
+
+  <div class="imag-row1">
+   <a target="_blank" href="images/Fallout.jpg">
+    <img src="images/Fallout.jpg" alt="Fallout.jpg" style="width:100%;height:150px">
+   </a>
+  <div class="name-game">Fallout 4</div>
+  </div>
+
+  <div class="imag-row1">
+   <a target="_blank" href="images/witcher3.jpg">
+    <img class="imag-right" src="images/witcher3.jpg" alt="witcher3.jpg" style="width:100%;height:150px">
+   </a>
+  <p class="name-game">The Witcher 3: Wild Hunt</p>
+  </div>
+  
+  <div class="imag-row1">
+   <a target="_blank" href="images/Bloodborne.jpg">
+    <img class="imag-left" src="images/Bloodborne.jpg" alt="Bloodborne.jpg" style="width:100%;height:150px">
+   </a>
+   <div class="name-game">Bloodborne</div>
+  </div>
+  
+  <div class="imag-row1">
+   <a target="_blank" href="images/dragonage.jpg">
+    <img src="images/dragonage.jpg" alt="dragonage" style="width:100%;height:150px">
+   </a>
+  <div class="name-game">Dragon Age: Inquisition</div>
+  </div>
+
+  <div class="imag-row1">
+   <a target="_blank" href="images/ff.jpg">
+    <img src="images/ff.jpg" alt="Final Fantasy" style="width:100%;height:150px">
+   </a>
+  <div class="name-game">Lightning Returns: Final Fantasy XIII</div>
+  </div>
+
+  <div class="imag-row1">
+   <a target="_blank" href="images/skyrim.jpg">
+    <img class="imag-right" src="images/skyrim.jpg" alt="skyrim" style="width:100%;height:150px">
+   </a>
+  <div class="name-game">The Elder Scrolls V: Skyrim</div>
+  </div>
+ </div> 
+ 
+ <div class="bottom">
+   <div class="col-left">
+    <div class="after-images">
+     <p class="p-square2"><b>Últimas guías</b></p>
+    </div>
+    
+    <div class="games-left">
+     <div class="block-left1">
+      <a target="_blank" href="images/xcom2.jpg">
+    <img class="images-left1" src="images/xcom2.jpg" alt="xcom2" style="height:60px">
+   </a>
+     <p class="title-game"><b>XCOM 2</b></p><br>
+     <p class="consoles">PC, Playstation, Xbox One<p>
+     </div>
+     <div class="block-left2">
+      <a target="_blank" href="images/tombr.jpg">
+    <img class="images-left1" src="images/tombr.jpg" alt="tombr" style="height:60px">
+   </a>
+     <p class="title-game"><b>Rise of the Tomb Raider</b></p><br>
+     <p class="consoles">PC, Playstation, Xbox One<p>
+     </div>
+     <div class="block-left3">
+      <a target="_blank" href="images/bio.jpg">
+    <img class="images-left1" src="images/bio.jpg" alt="bio" style="height:60px">
+   </a>
+     <p class="title-game"><b>BioShock: The Collection</b></p><br>
+     <p class="consoles">PC, Playstation, Xbox One<p>
+     </div>
+     <div class="block-left4">
+      <a target="_blank" href="images/fallNuka.jpg">
+    <img class="images-left1" src="images/fallNuka.jpg" alt="falloutNuka" style="height:60px">
+   </a>
+     <p class="title-game"><b>Fallout 4 - Nuka-World</b></p><br>
+     <p class="consoles">PC, Playstation, Xbox One<p>
+     </div>
+   </div><!--games-left-->
+  </div><!--col-left-->
+  
+   <div class="col-right">
+    <div class="after-imagesright">
+     <p class="p-square3"><b>Trucos</b></p>
+    </div>
+    
+    <div class="games-right">
+     <div class="block-right1">
+      <a target="_blank" href="images/tokyo.jpg">
+    <img class="images-right1" src="images/tokyo.jpg" alt="tokyo" style="height:60px">
+   </a>
+     <p class="title-gameright"><b>Tokyo Mirage Sessions ♯FE</b></p><br>
+     <p class="consolesright">Wii U<p>
+     </div>
+     <div class="block-right2">
+      <a target="_blank" href="images/picross.jpg">
+    <img class="images-right2" src="images/picross.jpg" alt="picross" style="height:60px">
+   </a>
+     <p class="title-gameright"><b>Picross 3D Round 2</b></p><br>
+     <p class="consolesright">Nintendo 3DS<p>
+     </div>
+     <div class="block-right3">
+      <a target="_blank" href="images/kingof.jpg">
+    <img class="images-right3" src="images/kingof.jpg" alt="kingof" style="height:60px">
+   </a>
+     <p class="title-gameright"><b>The King of Fighters XIV</b></p><br>
+     <p class="consolesright">PC, Playstation, Xbox One<p>
+     </div>
+     <div class="block-right4">
+      <a target="_blank" href="images/metroid.jpg">
+    <img class="images-right1" src="images/metroid.jpg" alt="metroid" style="height:60px">
+   </a>
+     <p class="title-gameright"><b>Metroid Prime: Federation Force</b></p><br>
+     <p class="consolesright">PC, Playstation, Xbox One<p>
+     </div>
+   </div><!--games-right-->
+  </div><!--col-right-->
+ </div><!--bottom-->
+ </main>
+</div>
+</body>
+</html>
+
+<!-- Para hacer un formulario
+  <form action="/action_page.php">
+ <div>
+  <div style="width:8%; border: 1px solid red; float:left">
+    <p>User:</p>
+    <p>Password:</p>
+  </div>
+  <div style="width:74%; float:left">
+    <p><input type="text" name="user" value=""></p>
+    <p><input type="text" name="password" value=""></p>
+  </div>
+ </div>
+ <div style="clear:left">
+   <input type="submit" value="Submit">
+  </div>
+</form> 
+-->

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pasapalabra</title>
+    <link rel="stylesheet" type="text/css" href="style/styles.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+</head>
+<body>
+  <div id="rowTop" class="rowTop">
+   <div id="letterAll" class="letterAll">
+    <div id="A" class="letter">A</div>
+    <div id="B" class="letter">B</div>
+    <div id="C" class="letter">C</div>
+    <div id="D" class="letter">D</div>
+    <div id="E" class="letter">E</div>
+    <div id="F" class="letter">F</div>
+    <div id="G" class="letter">G</div>
+    <div id="H" class="letter">H</div>
+    <div id="I" class="letter">I</div>
+    <div id="J" class="letter">J</div>
+    <div id="K" class="letter">K</div>
+    <div id="L" class="letter">L</div>
+    <div id="M" class="letter">M</div>
+    <div id="N" class="letter">N</div>
+    <div id="Ñ" class="letter">Ñ</div>
+    <div id="O" class="letter">O</div>
+    <div id="P" class="letter">P</div>
+    <div id="Q" class="letter">Q</div>
+    <div id="R" class="letter">R</div>
+    <div id="S" class="letter">S</div>
+    <div id="T" class="letter">T</div>
+    <div id="U" class="letter">U</div>
+    <div id="V" class="letter">V</div>
+    <div id="W" class="letter">W</div>
+    <div id="X" class="letter">X</div>
+    <div id="Y" class="letter">Y</div>
+    <div id="Z" class="letter">Z</div>
+   </div><!-- letter -->
+  </div><!-- rowTop -->
+  <section id="showRes">
+    <div id="showName"></div>
+    <div id="showSuccess" class="showSuccess">
+      <div id="showSuccessL" class="showL" style="padding-top:11px; font-size: 21px"><b>Success</b></div>
+      <div id="showSuccessR" class="showR">0</div>
+    </div><!-- showSuccess -->
+    <div id="showFaults" class="showFaults">
+      <div id="showFaultsL" class="showL" style="padding-top:11px; font-size: 21px"><b>Faults</b></div>
+      <div id="showFaultsR" class="showR">0</div>
+    </div><!-- showFaults -->
+  </section><!-- showRes -->
+  <section id="ask" class="ask">
+    <div id="letterOnly" class="letterAsk"></div>
+    <div id="parapAsk" class="parapAsk"></div>
+  </section><!-- ask -->
+   <section id="answer" class="answer">
+    <div class="ansElem">
+     <input type="text" id="enterAns" class="enterAns" name="answer" placeholder="Enter your answer">
+     <input id="butConf" type="button" class="button" name="confirmAns" value="Confirm" onclick=answerR()>
+     <input id="butPasa" type="button" class="button" name="pasapalabra" value="Pasapalabra" onclick=butPasapalabra()>
+    </div><!-- ansElem -->
+   </section><!-- answer -->
+  <div id="medium" class="medium">
+    <div id="timeout" class="timeout">
+      <div class="wordTime">Time</div>
+      <div id="showTime" class="time">25</div>
+    </div><!-- timeout -->
+    <section id="shownCom" class="shownCom">
+     <p id="welpasa"><b>PASAPALABRA</b></p>
+     <p id="intr"><b>I'll give you some instructions for the game: </b></p>
+     <p id="comment" class="scom"><b> - You have to introduce your name and then confirm if you want to start the game. <br> - Will be shown a question for each letter and you have to introduce an answer. <br> - You had to enter the words in lowercase and without accent. <br> - If you do not know it and you want to go to the next letter, press 'Pasapalabra'. <br> - In the case that you answer the question correctly, you will win 1 point."<br> - To end the game press "Finish". <br> - To exit the game at any time, press 'Exit'.</b></p>
+     <input type="button" class="button" id="ContinIni" name="continueIni" value="Continue" onclick=continueIni()>
+    </section><!-- showCom -->
+    <section id="result" class="res"></section>
+    <section id="buttonMain" class="buttonMain">
+     <input id="startA" type="button" class="button" name="startagain" value="Re-Start" onclick=startAgain()>
+     <input id="finish" type="button" class="button" name="finish" value="Finish" onclick=finishGame()>
+     <input id="exitG" type="button" class="button" name="exit" value="Exit" onclick=exit()>
+     <input id="info" type="button" class="button" name="exit" value="Info" onclick=showInfo()>
+    </section><!-- buttoMain -->
+  </div><!-- medium -->
+ <script type="text/javascript" src="js/main.js"></script>
+ <script type="text/javascript" src="js/questions.js"></script>
+</body>
+</html>

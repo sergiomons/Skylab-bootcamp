@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+ box-sizing: border-box;
+}
+div {
+    padding:5px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.clearfix {
+   font-family:Arial;
+}
+.img1, .img2 {
+     float:left;
+      width:15%;
+      margin-right: 10px;
+      cursor: pointer;     
+ }
+.section1 {
+    margin-bottom:10px;
+}
+.section1, .section2 {   
+      height: 140px;
+}
+h2 {
+  margin:0;
+  padding-bottom:0;
+}
+.clearfix :hover {
+ background-color: #ddd;
+ cursor:pointer;
+ }
+@media screen and (max-width: 480px) {
+    .img1 {
+        width: 100%; 
+        display:block;
+    }
+}
+</style>
+</head>
+<body>
+ <div class="clearfix">
+   <div class="section1">
+    <img class="img1" src="GrasslandsMountains.jpg" alt="Grass" width="170" height="125">
+    <h2 class="h2i1">The Grasslands</h2>
+    
+       <p class="pi1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa similique non dignissimoa tenetur adipisci sint. Consectetur adipisicing elit.Ipsa similique non dignissimoa tenetur adipisci sint.</p>
+      
+   </div>
+   <div class="section2">
+    <img class="img2" src="paradise_found.jpg" alt="paradise" width="170" height="125">
+    <h2 class="h2i2">Paradise Found</h2>
+     
+      <p class="pi2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa similique non dignissimoa tenetur adipisci sint. Consectetur adipisicing elit.Ipsa similique non dignissimoa tenetur adipisci sint.</p>
+    
+   </div>
+ </div>
+</body>
+</html>

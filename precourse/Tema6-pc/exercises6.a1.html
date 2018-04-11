@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Exercise6.1</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+input[type=text],input[type=number] {
+    width: 50%;
+    padding: 2px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+label {
+    padding: 12px;
+    display: inline-block;   
+}
+input[type=submit] {  
+    margin:auto;
+    background-color: #B4A996;
+    color: black;
+    padding: 4px 14px;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    cursor: pointer;  
+}
+input[type=submit]:hover {
+    background-color: #958A78;
+}
+h3 {
+    margin:0;
+    padding-left: 7px;
+}
+.containerForm {
+  border: 1px solid black;
+  height: 500px;
+  padding:5px;
+  width: 600px;
+  margin:auto;
+}
+.col-left {
+    float: left;
+    width: 33%;
+    margin: none
+}
+.col-right {
+    float: left;
+    width: 67%;
+    margin-top: 12px;
+}
+.sectionTop, .sectionBottom {
+     background-color: #E9E3D8;
+     margin:0;
+     padding:4px;
+     border-top: 2px solid #ccc;
+}
+.sectionBottom {
+    border-top: 3px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+}
+.row:after {
+  content:"";
+  display: table;
+  clear: both;
+} 
+@media screen and (max-width: 480px) {
+    .col-left, .col-right, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+</style>
+</head>
+<body>
+  <div class="containerForm">
+    <form action="/action_page.php">
+     <div class="sectionTop">
+      <div class="row">
+      <h3>Contact Details</h3>
+       <div class="col-left">
+        <label for="fname">Name:</label>
+       </div>
+       <div class="col-right">
+        <input type="text" id="fname" name="name">
+       </div>
+      </div>
+     <div class="row">
+       <div class="col-left">
+        <label for="emailad">Email address:</label>
+       </div>
+       <div class="col-right">
+        <input type="text" id="emailad" name="emailaddress">
+       </div>
+      </div>
+     <div class="row">
+       <div class="col-left">
+        <label for="telephon">Telephone:</label>
+       </div>
+       <div class="col-right">
+        <input type="number" id="telephon" name="telephone">
+       </div>
+      </div>
+     </div>
+     <div class="sectionBottom">
+      <div class="row">
+      <h3>Delivery Address</h3>
+       <div class="col-left">
+        <label for="addr1">Address1:</label>
+       </div>
+       <div class="col-right">
+        <input type="number" id="addr1" name="address1">
+       </div>
+      </div>
+     <div class="row">
+       <div class="col-left">
+        <label for="addr2">Address2:</label>
+       </div>
+       <div class="col-right">
+        <input type="number" id="addr2" name="address2">
+       </div>
+      </div>
+     <div class="row">
+       <div class="col-left">
+        <label for="subur">Suburb/Town:</label>
+       </div>
+       <div class="col-right">
+        <input type="text" id="subur" name="suburbtown">
+       </div>
+      </div>
+     <div class="row">
+       <div class="col-left">
+        <label for="postc">Postcode:</label>
+       </div>
+       <div class="col-right">
+        <input type="number" id="postc" name="postcode">
+       </div>
+      </div>  
+     <div class="row">
+       <div class="col-left">
+        <label for="countr">Country:</label>
+       </div>
+       <div class="col-right">
+        <input type="number" id="countr" name="country">
+       </div>
+      </div>
+     </div>
+     <div class="row">
+      <input type="submit" value="Begin download">
+     </div>
+    </form>
+   </div> 
+
+</body>
+</html>
